@@ -1,6 +1,6 @@
 from langchain_google_genai import ChatGoogleGenerativeAI
 from config.settings import (
-    GOOGLE_API_KEY,
+    GEMINI_API_KEY,
     MODEL_NAME,
     TEMPERATURE,
     MAX_OUTPUT_TOKENS,
@@ -9,7 +9,7 @@ from config.settings import (
 def get_gemini_llm():
     return ChatGoogleGenerativeAI(
         model=MODEL_NAME,
-        google_api_key=GOOGLE_API_KEY,
+        google_api_key=GEMINI_API_KEY,
         temperature=TEMPERATURE,
         max_output_tokens=MAX_OUTPUT_TOKENS,
     )
